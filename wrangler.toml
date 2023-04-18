@@ -2,5 +2,10 @@ name = "mesagisto-center-cfworker"
 main = "build/worker/shim.mjs"
 compatibility_date = "2023-03-22"
 
+kv_namespaces = [
+  { binding = "KVTEST", id = "2df50f46bd2a474693ba3805779055f4" }
+]
+
+
 [build]
 command = "cargo install -q worker-build --target=x86_64-unknown-linux-musl && worker-build --release"

@@ -11,7 +11,10 @@ wasm-opt = false
 crate-type = ["cdylib"]
 
 [dependencies]
-worker = "0.0.15"
+worker = "0.0.16"
+serde = { version = "1.0.160", default-features = false }
+ciborium = "0.2.0"
+hex = "0.4.3"
 
 [profile.release]
 lto = true

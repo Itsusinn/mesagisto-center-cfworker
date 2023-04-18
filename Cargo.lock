@@ -248,6 +248,7 @@ name = "mesagisto-center-cfworker"
 version = "0.1.0"
 dependencies = [
  "ciborium",
+ "futures-util",
  "hex",
  "serde",
  "worker",
